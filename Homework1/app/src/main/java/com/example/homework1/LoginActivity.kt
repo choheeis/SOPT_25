@@ -20,8 +20,13 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        loginClick() // 로그인 버튼 클릭 함수
-        signupClick() // 회원가입 버튼 클릭 함수
+        initLoginClick() // 로그인 버튼 클릭 함수
+        initSignupClick() // 회원가입 버튼 클릭 함수
+        /* 코드 피드백
+        로그인 버튼 클릭 리스너 함수와 회원가입 버튼 클릭 리스너 함수의 이름을 loginClick(), signupClick() 이라고 지었었다.
+        그런데 이 함수들은 실제로 로그인버튼과 회원가입 버튼을 클릭했을 때 호출되는 함수가 아닌 onCreate 함수가 호출될 때 호출되는 함수이므로
+        함수의 이름을 initLoginClick(), initSignupClick() 이라고 바꾸는 것이 좋을 것 같다!
+        * */
     }
 
     @SuppressLint("MissingSuperCall")
@@ -38,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     /** 로그인 버튼 클릭 리스너*/
-    fun loginClick(){
+    fun initLoginClick(){
         tvLOGINlogin.setOnClickListener {
             // 아이디 비밀번호 중 하나라도 입력을 안 한 경우
             Log.d("chohee", etLOGINid.text.toString())
@@ -52,7 +57,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     /** 회원가입 버튼 클릭 리스너 */
-    fun signupClick(){
+    fun initSignupClick(){
         tvLOGINsignup.setOnClickListener {
             var intent = Intent(this, SignupActivity::class.java)
             startActivityForResult(intent, SIGNUP_REQUEST)
