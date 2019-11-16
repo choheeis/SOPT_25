@@ -1,4 +1,4 @@
-package com.example.homework2
+package com.example.homework1
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -8,7 +8,9 @@ import android.os.Bundle
 import android.text.Editable
 import android.util.Log
 import android.widget.Toast
+import com.example.homework2.HomeActivity
 import com.example.homework2.R
+import com.example.homework2.SignupActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -35,12 +37,16 @@ class LoginActivity : AppCompatActivity() {
         if(requestCode == SIGNUP_REQUEST){
             if(resultCode == Activity.RESULT_OK){
                 // 인텐트로 넘어온 id, pw 데이터 받기
-                val id = data?.getStringExtra("id")!!.toString()
-                val pw  = data.getStringExtra("password")!!.toString()
-                etLOGINid.setText(id)
-                etLOGINpw.setText(pw)
+                GET_ID_PASSWD_FROM_INTENT(data)
             }
         }
+    }
+
+    private fun GET_ID_PASSWD_FROM_INTENT(data: Intent?) {
+        val id = data?.getStringExtra("id")!!.toString()
+        val pw = data.getStringExtra("password")!!.toString()
+        etLOGINid.setText(id)
+        etLOGINpw.setText(pw)
     }
 
     /** 로그인 버튼 클릭 리스너*/

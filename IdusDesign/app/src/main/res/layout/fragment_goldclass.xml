@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- 상단 탭 -->
+    <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#d1f8f8f8"
+            android:text="금손 클래스"
+            android:textSize="17sp"
+            android:textColor="#212529"
+            android:gravity="center_vertical|center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+    <View
+            android:id="@+id/v_bar"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#4d000000"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_title"/>
+
+    <!-- 금손 클래스 리사이클러 뷰 컨테이너 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_goldclass"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:weightSum="2"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/v_bar"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <!-- 인기 금손 클래스 리사이클러뷰 -->
+        <TextView
+                android:id="@+id/tv_like_goldclass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인기 금손 클래스"
+                android:textSize="18sp"
+                android:textColor="#2c2c2c"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@+id/container_goldclass"
+                app:layout_constraintStart_toStartOf="@+id/container_goldclass"
+                />
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_like_goldclass"
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_like_goldclass"
+                app:layout_constraintStart_toStartOf="parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <!-- 새로운 금손 클래스 리사이클러뷰 -->
+        <TextView
+                android:id="@+id/tv_new_goldclass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="31dp"
+                android:text="새로운 금손 클래스"
+                android:textSize="18sp"
+                android:textColor="#2c2c2c"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/rv_like_goldclass"
+                app:layout_constraintStart_toStartOf="parent"/>
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_new_goldclass"
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_new_goldclass"
+                app:layout_constraintStart_toStartOf="parent">
+            
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#f2f2f2"
+            app:layout_constraintTop_toBottomOf="@+id/container_goldclass"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
