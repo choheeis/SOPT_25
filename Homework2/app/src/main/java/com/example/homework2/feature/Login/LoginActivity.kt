@@ -1,16 +1,15 @@
-package com.example.homework1
+package com.example.homework2.feature.Login
 
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
 import android.util.Log
 import android.widget.Toast
-import com.example.homework2.HomeActivity
 import com.example.homework2.R
-import com.example.homework2.SignupActivity
+import com.example.homework2.feature.GitFollowerView.FollowerActivity
+import com.example.homework2.feature.Signup.SignupActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -57,7 +56,7 @@ class LoginActivity : AppCompatActivity() {
             if(etLOGINid.text.toString().isEmpty() || etLOGINpw.text.toString().isEmpty()){
                 Toast.makeText(this, "아이디와 비밀번호를 모두 입력해주세요." , Toast.LENGTH_SHORT).show()
             }else{
-                var intent = Intent(this, HomeActivity::class.java)
+                var intent = Intent(this, FollowerActivity::class.java)
                 startActivity(intent)
             }
         }

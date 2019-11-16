@@ -1,11 +1,11 @@
-package com.example.homework2
+package com.example.homework2.feature.Signup
 
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
+import com.example.homework2.R
 import kotlinx.android.synthetic.main.activity_signup.*
 
 class SignupActivity : AppCompatActivity() {

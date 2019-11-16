@@ -9,9 +9,10 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".SignupActivity"></activity>
-        <activity android:name=".HomeActivity"></activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".feature.GitRepository.GitrepositoryActivity"/>
+        <activity android:name=".feature.Signup.SignupActivity"/>
+        <activity android:name=".feature.GitFollowerView.FollowerActivity"/>
+        <activity android:name=".feature.Login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
