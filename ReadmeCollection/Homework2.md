@@ -32,3 +32,5 @@
     리사이클러뷰의 Adapter 클래스 안에 있는 __onBindViewHolder__ 함수 안에서 setOnClickListener을 호출하면 된다.
 
     이 때, 변수 itemView는 ViewHolder 클래스인 FollowerViewHolder 클래스에서 선언한 View 변수이다!
+
+    <br>
