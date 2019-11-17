@@ -17,12 +17,6 @@
 
 <br>
 
-## ✋ 개발 결과
-
-![homework2](SOPT_25/resource/gif/homework2.gif)
-
-<br>
-
 ## ✋ 중요 코드 설명
 
 - _리사이클러뷰 안의 item 클릭 리스너 (클릭시 다른 화면으로 전환되게 하기)_
