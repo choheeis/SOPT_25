@@ -24,8 +24,9 @@ class FollowerAdapter(private val context : Context) : RecyclerView.Adapter<Foll
 
     override fun onBindViewHolder(holder: FollowerViewHolder, position: Int) {
         holder.bind(data[position])
+
+        /** 각 아이템 뷰 클릭 시 화면 전환 */
         holder.itemView.setOnClickListener {
-            /** 각 아이템 뷰 클릭 시 화면 전환 */
             var intent = Intent(context, GitrepositoryActivity::class.java)
             context.startActivity(intent)
         }
