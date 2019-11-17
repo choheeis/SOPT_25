@@ -19,7 +19,7 @@
 
 ## ✋ 개발 결과
 
-![homework2](./resource/gif/homework2.gif)
+![homework2](SOPT_25/resource/gif/homework2.gif)
 
 <br>
 
