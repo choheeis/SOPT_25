@@ -12,6 +12,8 @@ class GoldClassViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
     val tvStore : TextView = itemView.findViewById(R.id.tv_item_goldclass_store)
 
     fun bind(data : GoldClassItemData){
+        ivThumbnail.setImageResource(data.ivThumbnail!!)
+        ivProfile.setImageResource(data.ivProfile!!)
         tvTitle.text = data.tvTitle
         tvStore.text = data.tvStore
     }

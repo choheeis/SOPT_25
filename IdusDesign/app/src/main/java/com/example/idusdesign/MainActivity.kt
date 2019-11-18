@@ -35,28 +35,28 @@ class MainActivity : AppCompatActivity() {
 
         rvLikeGoldClassAdapter.data = listOf(
             GoldClassItemData(
-                ivThumbnail = null,
-                ivProfile = null,
+                ivThumbnail = R.drawable.img_1,
+                ivProfile = R.drawable.profile_1,
                 tvTitle = "통통 다쿠아즈 만들기",
                 tvStore = "메르시오브"
             ),
             GoldClassItemData(
-                ivThumbnail = null,
-                ivProfile = null,
+                ivThumbnail = R.drawable.img_2,
+                ivProfile = R.drawable.profile_2,
                 tvTitle = "레터링케이크",
                 tvStore = "메르시오브"
             )
         )
         rvNewGoldClassAdapter.data = listOf(
             GoldClassItemData(
-                ivThumbnail = null,
-                ivProfile = null,
+                ivThumbnail = R.drawable.img_3,
+                ivProfile = R.drawable.profile_1,
                 tvTitle = "꾸덕,쫀득 마카롱 원데이",
                 tvStore = "해블랑디저트"
             ),
             GoldClassItemData(
-                ivThumbnail = null,
-                ivProfile = null,
+                ivThumbnail = R.drawable.img_3,
+                ivProfile = R.drawable.profile_2,
                 tvTitle = "까눌레클래스",
                 tvStore = "다앤하"
             )
