@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
                 tvStore = "해블랑디저트"
             ),
             GoldClassItemData(
-                ivThumbnail = R.drawable.img_3,
+                ivThumbnail = R.drawable.img_4,
                 ivProfile = R.drawable.profile_2,
                 tvTitle = "까눌레클래스",
                 tvStore = "다앤하"
