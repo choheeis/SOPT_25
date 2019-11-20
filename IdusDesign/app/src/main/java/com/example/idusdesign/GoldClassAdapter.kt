@@ -27,6 +27,7 @@ class GoldClassAdapter(private val context : Context) : RecyclerView.Adapter<Gol
          * --> isSelected가 false면 selector의 item중 selected 속성값이 false인 item을 보여준다.
          * */
         fun clickStar(){
+            // isSelected가 false면 좋아요 안 눌린 상태, true면 좋아요 눌린 상태라고 하자.
             var isSelected : Boolean = false
             holder.itemView.iv_item_goldclass_star.setOnClickListener {
                 if(isSelected == false){
@@ -39,7 +40,7 @@ class GoldClassAdapter(private val context : Context) : RecyclerView.Adapter<Gol
             }
         }
 
-        clickStar()  
+        clickStar()
     }
 
     override fun getItemCount(): Int {
