@@ -10,7 +10,6 @@ class GoldClassAdapter(private val context : Context) : RecyclerView.Adapter<Gol
 
     var data = listOf<GoldClassItemData>()
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GoldClassViewHolder {
         val itemView = LayoutInflater.from(context).inflate(R.layout.item_goldclass, parent, false)
         return GoldClassViewHolder(itemView)
