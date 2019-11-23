@@ -6,3 +6,6 @@ data class GoldClassItemData (
     var tvTitle : String,
     var tvStore : String
 )
+
+
+
