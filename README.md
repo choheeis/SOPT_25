@@ -19,3 +19,13 @@
 💁 리드미 --> [여기](https://github.com/choheeis/SOPT_25/blob/master/ReadmeCollection/Homework2.md)
 
 ![Homework2](./resource/gif/homework2.gif)
+
+<br>
+
+## IdusDesign
+
+💁 안드로이드 파트 + 디자인 파트 합동 세미나 과제였던 "제플린을 사용하여 디자인 파트가 만들어온 UI를 협업을 통해 완성하기!"
+
+💁 리드미 --> [여기](https://github.com/choheeis/SOPT_25/blob/master/%EB%A6%AC%EB%93%9C%EB%AF%B8%EB%AA%A8%EC%9D%8C%EC%A7%91/IdusDesign.md)
+
+![IdusDesign](./resource/gif/IdusDesign.gif)
